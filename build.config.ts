@@ -12,5 +12,6 @@ export default defineBuildConfig({
   externals: [
     'vue',
     'vite',
+    'magic-string',
   ],
 })
