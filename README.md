@@ -1,5 +1,7 @@
 # vite-plugin-vue-options
 
+A compile macro to make the usage of options api in setup script in ease.
+
 [![NPM version](https://img.shields.io/npm/v/vite-plugin-vue-options?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-vue-options)
 
 ## Get started
@@ -80,4 +82,4 @@ Then you can use `defineOptions` with type emits.
 
 ## License
 
-[MIT](./LICENSE) License © 2022 [guygubaby](https://github.com/bryce-loskie)
+[MIT](./LICENSE) License © 2022 [guygubaby](https://github.com/guygubaby)
