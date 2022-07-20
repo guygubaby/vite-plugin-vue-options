@@ -67,6 +67,18 @@ export default {
 </script>
 ```
 
+3. Typescript support (Optional)
+
+```json
+{
+  "types": [
+    "vite-plugin-vue-options"
+  ]
+}
+```
+
+Then you can use `defineOptions` with type emits.
+
 ## License
 
 [MIT](./LICENSE) License © 2022 [guygubaby](https://github.com/bryce-loskie)
