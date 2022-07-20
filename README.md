@@ -14,8 +14,7 @@ pnpm i vite-plugin-vue-options
 
 ```ts
 import { defineConfig } from 'vite'
-import Inspect from 'vite-plugin-inspect'
-import { VueOptions } from '../src/index'
+import VueOptions from 'vite-plugin-vue-options'
 
 // https://vitejs.dev/config/
 export default defineConfig({

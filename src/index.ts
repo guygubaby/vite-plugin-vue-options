@@ -10,7 +10,7 @@ const DEFINE_OPTIONS_FN_NAME = 'defineOptions'
 
 const OptionFnRE = /\bdefineOptions\(\W*(\{[\w\W\s\S]+\})\W*\)$/mi
 
-export const transform = (code: string, _id: string) => {
+const transform = (code: string, _id: string) => {
   const matches = code.match(OptionFnRE)
   if (!matches)
     return code
@@ -33,7 +33,7 @@ export default ${optionFnBody}
   }
 }
 
-export const VueOptions = (): Plugin => {
+const vitePluginVueOptions = (): Plugin => {
   return {
     name: 'vite-plugin-vue-options',
     enforce: 'pre',
@@ -49,3 +49,8 @@ export const VueOptions = (): Plugin => {
   }
 }
 
+export {
+  vitePluginVueOptions as default,
+  // for testing
+  transform,
+}
