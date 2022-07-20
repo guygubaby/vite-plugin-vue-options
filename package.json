@@ -1,0 +1,68 @@
+{
+  "name": "vite-plugin-vue-options",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@7.2.1",
+  "description": "",
+  "author": "guygubaby <guygubaby@gmail.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/guygubaby",
+  "homepage": "https://github.com/guygubaby/vite-plugin-vue-options#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guygubaby/vite-plugin-vue-options.git"
+  },
+  "bugs": "https://github.com/guygubaby/vite-plugin-vue-options/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "play": "vite playground",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^0.16.3",
+    "@bryce-loskie/eslint-config": "^2.0.2",
+    "@bryce-loskie/utils": "^0.1.36",
+    "@types/node": "^18.0.3",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.19.0",
+    "esno": "^0.16.3",
+    "magic-string": "^0.26.2",
+    "pnpm": "^7.5.0",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.7.4",
+    "unbuild": "^0.7.4",
+    "vite": "^3.0.2",
+    "vite-plugin-inspect": "^0.6.0",
+    "vitest": "^0.18.0",
+    "vue": "^3.2.37"
+  }
+}
