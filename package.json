@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-vue-options",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "packageManager": "pnpm@7.2.1",
   "description": "",
   "author": "guygubaby <guygubaby@gmail.com>",
@@ -46,6 +46,10 @@
     "test": "vitest",
     "play": "vite playground",
     "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vite": "^2.8.0 || ^3.0.0",
+    "vue": "^3.2.0"
   },
   "dependencies": {
     "magic-string": "^0.26.2"
