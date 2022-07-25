@@ -1,6 +1,6 @@
 # vite-plugin-vue-options
 
-A compile macro to make the usage of options api in setup script in ease.
+A compile macro to make the usage of options api in setup script with ease.
 
 [![NPM version](https://img.shields.io/npm/v/vite-plugin-vue-options?color=a1b858&label=)](https://www.npmjs.com/package/vite-plugin-vue-options)
 
