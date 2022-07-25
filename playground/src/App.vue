@@ -9,6 +9,9 @@ import { ref } from 'vue'
 
 defineOptions({
   name: 'FooBar',
+  data: () => ({
+    foo: 'foo',
+  }),
 })
 
 const foo = ref('foo')
