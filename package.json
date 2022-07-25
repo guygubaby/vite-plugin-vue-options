@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.1.1",
   "packageManager": "pnpm@7.2.1",
-  "description": "",
+  "description": "A compile macro to make the usage of options api in setup script with ease",
   "author": "guygubaby <guygubaby@gmail.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/guygubaby",
