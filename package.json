@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-vue-options",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packageManager": "pnpm@7.2.1",
   "description": "A compile macro to make the usage of options api in setup script with ease",
   "author": "guygubaby <guygubaby@gmail.com>",
@@ -37,8 +37,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild",
-    "dev": "unbuild --stub",
+    "build": "tsup",
+    "dev": "tsup -w",
     "lint": "eslint .",
     "prepublishOnly": "nr build",
     "release": "bumpp",
@@ -65,8 +65,8 @@
     "esno": "^0.16.3",
     "pnpm": "^7.5.0",
     "rimraf": "^3.0.2",
+    "tsup": "^6.2.1",
     "typescript": "^4.7.4",
-    "unbuild": "^0.7.4",
     "vite": "^3.0.2",
     "vite-plugin-inspect": "^0.6.0",
     "vitest": "^0.18.0",
