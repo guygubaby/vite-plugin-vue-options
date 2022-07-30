@@ -5,6 +5,7 @@
     "lib": ["esnext"],
     "jsx": "preserve",
     "moduleResolution": "node",
+    "baseUrl": ".",
     "esModuleInterop": true,
     "strict": true,
     "strictNullChecks": true,

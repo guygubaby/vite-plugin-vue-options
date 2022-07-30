@@ -16,9 +16,9 @@ pnpm i vite-plugin-vue-options
 
 ```ts
 import { defineConfig } from 'vite'
+import Vue from '@vitejs/plugin-vue'
 import VueOptions from 'vite-plugin-vue-options'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [Vue(), VueOptions()],
 })
@@ -46,9 +46,15 @@ const foo = ref('foo')
 
 Using `defineOptions` fn to set option api in setup script.
 
-The code will compile to:
+The above code will be compiled into:
 
-```html
+```html  
+<script lang="ts">
+export default {
+  name: 'FooBar',
+}
+</script>
+
 <template>
   <div>
     foo
@@ -59,12 +65,6 @@ The code will compile to:
 import { ref } from 'vue'
 
 const foo = ref('foo')
-</script>
-
-<script lang=ts>
-export default {
-  name: 'FooBar',
-}
 </script>
 ```
 
@@ -79,6 +79,10 @@ export default {
 ```
 
 Then you can use `defineOptions` with type emits.
+
+## Caveats
+
+Currently, the plugin only supports the `defineOptions` function in the setup script, and can not access outer variables.
 
 ## License
 
