@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-vue-options",
   "type": "module",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "packageManager": "pnpm@8.3.1",
   "description": "A compile macro to make the usage of options api in setup script with ease",
   "author": "guygubaby <guygubaby@gmail.com>",
